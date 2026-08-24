@@ -1,0 +1,11 @@
+# Hand-curated, cross-platform (Windows/macOS/Linux) — deliberately NOT a raw
+# `pip freeze` dump. Plain "uvicorn" (not uvicorn[standard]) avoids pulling in
+# uvloop/httptools, which are POSIX-only and fail to build on Windows.
+fastapi>=0.115
+uvicorn>=0.30
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+plotly>=5.24
+python-multipart>=0.0.9
+pydantic>=2.8
